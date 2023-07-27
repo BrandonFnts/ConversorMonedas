@@ -4,9 +4,9 @@ Este proyecto es una aplicación de consola que permite realizar conversiones de
 
 ## Características
 
-- Conversión de monedas: Permite convertir una cantidad de dinero de una moneda a otra. Admite las siguientes monedas: MXN, USD, EUR, GBP, JPY, KRW.
+- Conversión de monedas: Permite convertir una cantidad de dinero de una moneda a otra. Admite convertir MXN a las siguientes monedas y viceversa: USD, EUR, GBP, JPY, KRW.
 
-- Conversión de medidas: Permite convertir una medida de una unidad a otra. Admite las siguientes unidades de medida: metros, centímetros, pulgadas, pies, kilogramos, libras.
+- Conversión de medidas: Permite convertir una medida de una unidad a otra. Admite las convertir Metros a las siguientes unidades de medida y viceversa: centímetros, pulgadas, milimetros, kilometros.
 
 ## Cómo utilizar
 
