@@ -2,8 +2,8 @@ public class Controlador {
     public void control() {
         // Declara variables globales
         double valorAConvertir = 0;
-        int tipoConversion = 0;
-        String resultado = "";
+        int tipoDeConversion = 0;
+        String resultadoDeLaConversion = "";
         // Iniciar Objeto de la clase Vista y Operaciones
         Vista vista = new Vista();
         Operaciones opera = new Operaciones();
@@ -14,19 +14,19 @@ public class Controlador {
             if (tipo == 0) {
                 // Solicitar valores de la moneda y el tipo de cambio
                 valorAConvertir = vista.solicitarDinero();
-                tipoConversion = vista.tipoCambioMonetario();
+                tipoDeConversion = vista.tipoCambioMonetario();
                 // Encapsular los datos mediante el cosntructor de la clase Datos
-                Datos dat = new Datos(valorAConvertir, tipoConversion);
+                Datos dat = new Datos(valorAConvertir, tipoDeConversion);
                 // Realizar Operación de conversión
-                resultado = opera.conversorDinero(dat.getValor(), dat.getTipo());
-                vista.visualizarResultado(resultado);
+                resultadoDeLaConversion = opera.conversorDinero(dat.getValor(), dat.getTipo());
+                vista.visualizarResultado(resultadoDeLaConversion);
                 // Si el tipo de coversión es Medida se llama al metodo Conversor de medidas
             } else if (tipo == 1) {
                 valorAConvertir = vista.solicitarMedida();
-                tipoConversion = vista.tipoCambioMedidas();
-                Datos dat = new Datos(valorAConvertir, tipoConversion);
-                resultado = opera.conversorMedida(dat.getValor(), dat.getTipo());
-                vista.visualizarResultado(resultado);
+                tipoDeConversion = vista.tipoCambioMedidas();
+                Datos dat = new Datos(valorAConvertir, tipoDeConversion);
+                resultadoDeLaConversion = opera.conversorMedida(dat.getValor(), dat.getTipo());
+                vista.visualizarResultado(resultadoDeLaConversion);
             }
         } while (vista.salirLoop() != 1);
         vista.mensaje();
