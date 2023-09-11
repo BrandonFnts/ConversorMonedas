@@ -57,7 +57,7 @@ public class Vista {
         return dinero;
     }
 
-    public void mensaje() {
+    public void mensajeFinal() {
         JOptionPane.showMessageDialog(null, "Programa terminado");
     }
 

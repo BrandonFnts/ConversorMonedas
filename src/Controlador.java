@@ -29,6 +29,6 @@ public class Controlador {
                 vista.visualizarResultado(resultadoDeLaConversion);
             }
         } while (vista.salirLoop() != 1);
-        vista.mensaje();
+        vista.mensajeFinal();
     }
 }
