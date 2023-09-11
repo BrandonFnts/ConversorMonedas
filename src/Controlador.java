@@ -4,6 +4,7 @@ public class Controlador {
         double valorAConvertir = 0;
         int tipoDeConversion = 0;
         String resultadoDeLaConversion = "";
+        
         // Iniciar Objeto de la clase Vista y Operaciones
         Vista vista = new Vista();
         Operaciones opera = new Operaciones();
